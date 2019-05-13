@@ -3,14 +3,23 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AboutComponent } from './about/about.component';
+import { RouterModule, Routes } from '@angular/router';
 
+
+const appRoutes: Routes = [
+  {path: 'about' , component: AboutComponent }
+];
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    RouterModule.forRoot(appRoutes, { enableTracing: true }
+      )
   ],
   providers: [],
   bootstrap: [AppComponent]
