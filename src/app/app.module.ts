@@ -8,7 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 const appRoutes: Routes = [
-  {path: 'about' , component: AboutComponent }
+  {path: '' , component: AboutComponent }
 ];
 @NgModule({
   declarations: [
